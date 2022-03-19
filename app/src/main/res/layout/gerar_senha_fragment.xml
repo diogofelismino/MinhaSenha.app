@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Text com titulo -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_menor"
+                android:autofillHints="name"
+                app:cardCornerRadius="@dimen/margin_menor"
+                app:cardElevation="@dimen/margin_menor"
+                android:backgroundTint="@color/purple_500">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_maior"
+                        android:src="@mipmap/ic_launcher_senha_02_foreground"
+                        android:contentDescription="@string/logo_do_aplicativo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="30dp"
+                        android:text="@string/titulo_gerar_senha"
+                        android:textAlignment="center"
+                        android:textSize="22sp"
+                        android:textColor="@color/teal_200"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- CheckBox com as escolhas -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_menor"
+                android:autofillHints="name"
+                app:cardCornerRadius="@dimen/margin_menor"
+                app:cardElevation="@dimen/margin_menor"
+                android:backgroundTint="@color/purple_500">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:textAlignment="viewEnd">
+
+                    <CheckBox
+                        android:id="@+id/cbLetraMaiusculas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_menor"
+                        android:text="@string/letras_maiusculas"
+                        android:textColor="@color/teal_200"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/cbLetraMinusculas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_menor"
+                        android:text="@string/letras_minusculas"
+                        android:textColor="@color/teal_200"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cbNumeros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_menor"
+                        android:text="@string/cb_numero"
+                        android:textColor="@color/teal_200"/>
+
+                    <CheckBox
+                        android:id="@+id/cbEspeciais"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_menor"
+                        android:text="@string/cb_especiais"
+                        android:textColor="@color/teal_200"/>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <EditText
+                    android:id="@+id/editTamanhoSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="@dimen/margin_menor"
+                    android:layout_marginEnd="@dimen/margin_menor"
+                    android:inputType="number"
+                    android:hint="@string/digite_o_tamanho_da_senha"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Edit para colocar titulo para senha -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_menor"
+                app:cardCornerRadius="@dimen/margin_menor"
+                app:cardElevation="@dimen/margin_menor"
+                android:backgroundTint="@color/purple_500">
+
+
+                <EditText
+                    android:id="@+id/editTituloSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_menor"
+                    android:layout_marginTop="@dimen/margin_menor"
+                    android:layout_marginEnd="@dimen/margin_menor"
+                    android:hint="@string/digite_um_titulo_para_senha"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Edit para digitar senha -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_menor"
+                app:cardCornerRadius="@dimen/margin_menor"
+                app:cardElevation="@dimen/margin_menor"
+                android:backgroundTint="@color/purple_500">
+
+
+                <EditText
+                    android:id="@+id/editSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_menor"
+                    android:layout_marginTop="@dimen/margin_menor"
+                    android:layout_marginEnd="@dimen/margin_menor"
+                    android:textColor="@color/teal_200"
+                    android:textColorHint="@color/teal_200"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Button de ação -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/margin_menor"
+                android:autofillHints="name"
+                app:cardCornerRadius="@dimen/margin_menor"
+                app:cardElevation="@dimen/margin_menor"
+                android:backgroundTint="@color/purple_500">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnGERAR"
+                        style="@style/BtnSalvar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_gerar_text" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSALVAR"
+                        style="@style/BtnSalvar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_salvar_text" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</FrameLayout>

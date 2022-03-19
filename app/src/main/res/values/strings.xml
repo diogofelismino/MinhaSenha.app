@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MinhaSenha</string>
+    <string name="navigation_header">Navigation header</string>
+    <string name="titulo">Minha Senha</string>
+    <string name="menu">Menu</string>
+    <string name="nav_title">Adicionar Senha</string>
+    <string name="action_settings">Sair</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_listar_txt">Listar Senha</string>
+    <string name="gerar_senha">Gerar Senha</string>
+    <string name="letras_maiusculas">Letras Maiúsculas</string>
+    <string name="letras_minusculas">Letras Minúsculas</string>
+    <string name="cb_numero">Números</string>
+    <string name="cb_especiais">Especiais</string>
+    <string name="titulo_gerar_senha">Gerar Senha</string>
+    <string name="logo_do_aplicativo">Logo do Aplicativo</string>
+    <string name="digite_o_tamanho_da_senha">Digite o tamanho da senha...</string>
+    <string name="digite_um_titulo_para_senha">Digite um titulo para senha...</string>
+    <string name="btn_gerar_text">GERAR</string>
+    <string name="btn_salvar_text">SALVAR</string>
+    <string name="adicionar_senha_titulo">Adicionar Senha</string>
+    <string name="digite_uma_senha_hint">Digite uma senha...</string>
+    <string name="pesquise_por_titulo_edit">Pesquise por titulo...</string>
+    <string name="listar_senha_titulo">Listar Senha</string>
+    <string name="titulo_senha_exp">Titulo | Senha</string>
+</resources>

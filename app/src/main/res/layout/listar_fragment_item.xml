@@ -14,16 +14,23 @@
         app:cardElevation="@dimen/margin_maior"
         android:backgroundTint="@color/purple_500">
 
-        <TextView
-            android:id="@+id/txtItemLista"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/titulo_senha_exp"
-            android:textColor="@color/teal_200"
-            android:textSize="18sp"
-            android:layout_margin="16dp"
-            />
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_maior">
 
+            <TextView
+                android:id="@+id/txtItemLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_maior"
+                android:text="@string/titulo_senha_exp"
+                android:textColor="@color/teal_200"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.cardview.widget.CardView>
 

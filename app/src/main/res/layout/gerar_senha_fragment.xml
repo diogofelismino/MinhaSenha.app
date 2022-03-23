@@ -35,7 +35,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="@dimen/margin_maior"
-                        android:src="@mipmap/ic_launcher_senha_02_foreground"
+                        android:src="@mipmap/ic_launcher_senha_03_foreground"
                         android:contentDescription="@string/logo_do_aplicativo" />
 
                     <TextView

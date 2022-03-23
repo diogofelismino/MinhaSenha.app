@@ -54,16 +54,28 @@ public class SenhaController extends AppDataBase implements ICrud{
         return getAllSenhas(SenhaDataModel.NOME_TABELA);
     }
 
-    public List<String> geraLista(){
+    public List<String> geraListaIdTitulo(){
 
         List<String> senhas = new ArrayList<>();
 
         for (Senha obj: listar()) {
-            senhas.add(obj.getId()+"  |  "+obj.getNome()+"  |  "+obj.getSenha());
+            senhas.add(obj.getNome() + "  |  " + obj.getSenha());
         }
 
         return senhas;
     }
+
+   /* public List<String> geraListaSenha() {
+
+        List<String> senhas = new ArrayList<>();
+
+        for (Senha obj : listar()) {
+            senhas.add(obj.getSenha());
+        }
+
+        return senhas;
+
+    }*/
 
     public String gerarSenha(Senha obj){
 

@@ -6,17 +6,17 @@
     <group android:checkableBehavior="single">
 
         <item android:id="@+id/nav_add_senha"
-            android:icon="@mipmap/ic_launcher_senha_02_foreground"
+            android:icon="@mipmap/ic_launcher_senha_03_foreground"
             android:title="@string/nav_title"
 
             />
 
         <item android:id="@+id/nav_gerar_senha"
-            android:icon="@mipmap/ic_launcher_senha_02_foreground"
+            android:icon="@mipmap/ic_launcher_senha_03_foreground"
             android:title="@string/gerar_senha"/>
 
         <item android:id="@+id/nav_listar_senha"
-            android:icon="@mipmap/ic_launcher_senha_02_foreground"
+            android:icon="@mipmap/ic_launcher_senha_03_foreground"
             android:title="@string/nav_listar_txt"/>
 
     </group>

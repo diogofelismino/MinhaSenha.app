@@ -32,10 +32,10 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
                         android:layout_margin="@dimen/margin_menor"
-                        android:src="@mipmap/ic_launcher_senha_02_foreground"
+                        android:src="@mipmap/ic_launcher_senha_03_foreground"
                         android:contentDescription="@string/logo_do_aplicativo" />
 
                     <TextView

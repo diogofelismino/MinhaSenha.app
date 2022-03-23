@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_senha_02"
+        android:icon="@mipmap/ic_launcher_senha_03"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_senha_02_round"
+        android:roundIcon="@mipmap/ic_launcher_senha_03_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MinhaSenha">
         <activity
